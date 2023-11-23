@@ -1,6 +1,6 @@
 const http = require("http")
 	const server = http.createServer((req, res) =>{
-		console.log("New connection")
+		console.log("New connection world")
 		res.end("Hello awesome")
 	} )
 
