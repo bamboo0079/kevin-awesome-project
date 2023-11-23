@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/rising-sector-405712/github.com/bamboo0079/kevin-awesome-project:$COMMIT_SHA', '.']
+  args: ['build', '-t', 'gcr.io/rising-sector-405712/github.com/bamboo0079/kevin-awesome-project:$SHORT_SHA', '.']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push','gcr.io/rising-sector-405712/github.com/bamboo0079/kevin-awesome-project:$COMMIT_SHA', '.']  
+  args: ['push','gcr.io/rising-sector-405712/github.com/bamboo0079/kevin-awesome-project:$SHORT_SHA', '.']  
